@@ -1,0 +1,197 @@
+.consent {
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+.user_order_list {
+    height: 100%;
+    width: 100%;
+    background-color: #19c5e1;
+    display: flex;
+}
+
+/* 样式 */
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box; /* 防止 padding 影响宽度 */
+    padding-top: 10px;
+
+}
+
+.sidenav h1 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+    /*background-color: rgb(240,240,240);*/
+}
+
+.option.active {
+    background-color: red;
+    color: white;
+}
+
+.main-content {
+    width: 80%;
+    /*margin-left: 260px;*/
+    padding: 20px;
+    background-color: white;
+}
+
+/* 隐藏内容 */
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.table-container {
+    width: 100%; /* 让容器宽度占满父元素 */
+    text-align: center; /* 水平居中 */
+    overflow-y: auto; /* 当内容超出容器高度时显示垂直滚动条 */
+    max-height: 420px; /* 设置最大高度，可以根据实际需求调整 */
+    position: relative;
+}
+
+.order-table {
+    width: 100%; /* 让表格宽度占满容器 */
+    border-collapse: collapse; /* 合并边框 */
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ccc; /* 添加边框 */
+    padding: 8px; /* 设置单元格内边距 */
+}
+
+.order-table th {
+    background-color: #f0f0f0; /* 设置表头背景色 */
+}
+
+.order-table th:nth-child(1) {
+    width: 132px; /* 设置第一个 th 的宽度为 100 像素 */
+}
+.order-table th:nth-child(2) {
+    width: 174px;
+}
+.order-table th:nth-child(3) {
+    width: 59px;
+}
+.order-table th:nth-child(4) {
+    width: 119px;
+}
+
+.order-table td {
+    background-color: #fff; /* 设置表格内容背景色 */
+}
+.order-table tbody {
+    max-height: 44px; /* 设置 tbody 的最大高度，可以根据实际需求调整 */
+    overflow-y: auto; /* 当内容超出 tbody 高度时显示垂直滚动条 */
+}
+.order-table td:nth-child(1) {
+    width: 132px; /* 设置第一个 th 的宽度为 100 像素 */
+}
+.order-table td:nth-child(2) {
+    width: 174px;
+}
+.order-table td:nth-child(3) {
+    width: 59px;
+}
+.order-table td:nth-child(4) {
+    width: 119px;
+}
+
+
+.order-table-2 {
+    width: 100%; /* 让表格宽度占满容器 */
+    border-collapse: collapse; /* 合并边框 */
+}
+
+.order-table-2 th, .order-table-2 td {
+    border: 1px solid #ccc; /* 添加边框 */
+    padding: 8px; /* 设置单元格内边距 */
+}
+
+.order-table-2 th {
+    background-color: #f0f0f0; /* 设置表头背景色 */
+}
+
+.order-table-2 th:nth-child(1) {
+    width: 51px; /* 设置第一个 th 的宽度为 100 像素 */
+}
+.order-table-2 th:nth-child(2) {
+    width: 99px;
+}
+.order-table-2 th:nth-child(3) {
+    width: 255px;
+}
+.order-table-2 th:nth-child(4) {
+    width: 77px;
+}
+.order-table-2 th:nth-child(5) {
+    width: 35px;
+}
+
+.order-table-2 th:nth-child(6) {
+    width: 92px;
+}
+
+.order-table-2 th:nth-child(7) {
+    width: 293px;
+}
+
+
+.order-table-2 td {
+    background-color: #fff; /* 设置表格内容背景色 */
+}
+.order-table-2 tbody {
+    max-height: 440px; /* 设置 tbody 的最大高度，可以根据实际需求调整 */
+    overflow-y: auto; /* 当内容超出 tbody 高度时显示垂直滚动条 */
+}
+.order-table-2 td:nth-child(1) {
+    width: 51px; /* 设置第一个 th 的宽度为 100 像素 */
+}
+.order-table-2 td:nth-child(2) {
+    width: 99px;
+}
+.order-table-2 td:nth-child(3) {
+    width: 255px;
+}
+.order-table-2 td:nth-child(4) {
+    width: 77px;
+}
+.order-table-2 td:nth-child(5) {
+    width: 35px;
+}
+
+.order-table-2 td:nth-child(6) {
+    width: 92px;
+}
+
+.order-table-2 td:nth-child(7) {
+    width: 293px;
+}
+
+#content3 {
+    padding: 80px;
+    /*height: 480px;*/
+    background-color: lightgray;
+}

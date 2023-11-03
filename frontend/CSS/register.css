@@ -1,0 +1,140 @@
+
+  .login-box{
+    position:relative;
+    margin: 10px auto;
+    width: 420px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgb(37 43 50 / 7%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .lb-header{
+    position:relative;
+    color: #00415d;
+    margin: 5px 5px 10px 5px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+    height:28px;
+  }
+  .lb-header a{
+    margin: 0 25px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+  .lb-header .active{
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+  }
+  .social-login{
+    position:relative;
+    float: left;
+    width: 100%;
+    height:auto;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .social-login a{
+    position:relative;
+    float: left;
+    width:calc(40% - 8px);
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 3%;
+    text-align:center;
+  }
+  .social-login a i{
+    position: relative;
+    float: left;
+    width: 20px;
+    top: 2px;
+  }
+  .social-login a:first-child{
+    background-color: #49639F;
+  }
+  .social-login a:last-child{
+    background-color: #DF4A32;
+  }
+  .email-login,.email-signup{
+    position:relative;
+    float: left;
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    text-align:center;
+  }
+  .u-form-group{
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .u-form-group input[type="text"],
+  .u-form-group input[type="password"]{
+    width: calc(50% - 22px);
+    height:45px;
+    width: 270px;
+    outline: none;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-radius: 2px;
+    color: #333;
+    font-size:0.8rem;
+    -webkit-transition:all 0.1s linear;
+    -moz-transition:all 0.1s linear;
+    transition:all 0.1s linear;
+  }
+  .u-form-group input:focus{
+    border-color: #358efb;
+  }
+  .u-form-group button{
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(90deg,#fe5447,#f3344a);
+    box-shadow: 0 3px 8px 1px rgb(235 28 49 / 22%);
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    font-family: MicrosoftYaHeiSemibold;
+    font-size: 18px;
+    color: #fff;
+    margin: 40px auto;
+  }
+  .forgot-password{
+    width:50%;
+    text-align: left;
+    text-decoration: underline;
+    color: #888;
+    font-size: 0.75rem;
+  }
+  .third{
+    height: 64px;
+    background: rgba(249,248,248,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .third a{
+    margin: 0 16px;
+  }
+  .third a img{
+    width: 28px;
+    height: 28px;
+  }

@@ -1,0 +1,234 @@
+.commodity {
+    height: 600px;
+    margin-top: 20px;
+}
+
+.commodityl,
+.commodityr {
+    float: left;
+    height: 600px;
+}
+
+.commodityl {
+    width: 400px;
+}
+
+.commodityltop,
+.commoditylbottom {
+    width: 400px;
+    float: left;
+}
+
+.commodityltop {
+    height: 400px;
+    position: relative;
+}
+
+.commodityltopimg {
+    height: 400px;
+    width: 400px;
+}
+
+.commodityltopmask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #FEDE4F;
+    opacity: .5;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+.commodityltopBig {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 500px;
+    height: 500px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.commodityltopBigImg {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.commoditylbottom {
+    height: 100px;
+}
+
+.commoditylbottomul {
+    height: 90px;
+    width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.commoditylbottomul li {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.commoditylbottomulli img {
+    width: 80px;
+    height: 80px;
+}
+
+.commoditylbottomulli img:hover {
+    transform: scale(1.1);
+}
+
+.commodityr {
+    width: 820px;
+}
+
+
+.commodityr_bookname {
+    height: 60px;
+}
+
+.commodityr_bookname span {
+    display: block;
+    font-family: '宋体';
+    line-height: 60px;
+    height: 60px;
+    width: 820px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(188, 54, 61);
+}
+
+.commodityr_bookdescribe {
+    height: 140px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.commodityr_bookprice {
+    height: 140px;
+    background-color: rgb(252, 250, 247);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.commodityr_bookpricel {
+    width: 280px;
+    height: 140px;
+    float: left;
+}
+
+.commodityr_bookdescribe p {
+    text-indent: 20px;
+    font-family: '宋体';
+    line-height: 25px;
+    height: 25px;
+    width: 815px;
+    font-size: 25px;
+    color: rgb(112, 106, 106);
+}
+
+.commodityr_bookprice span {
+    display: block;
+    font-family: '宋体';
+    margin: 5px 0;
+    color: rgb(143, 143, 149);
+}
+
+.commodityr_bookpricer {
+    width: 200px;
+    float: left;
+    height: 140px;
+}
+
+.commodityr_bookpricel .commodityr_bookprice_2 {
+    font-size: 35px;
+    color: rgb(229, 34, 34);
+    font-family: '隶书';
+}
+
+.commodityr_bookpricel .commodityr_bookprice_3 {
+    text-decoration: line-through;
+}
+
+.commodityr_bookpricer .commodityr_bookpricer_2 {
+    font-size: 35px;
+    color: rgb(33, 76, 144);
+    font-family: '隶书';
+}
+
+.commodityr_buy {
+    height: 50px;
+    margin-top: 30px;
+
+}
+
+.commodityr_buy_ul {
+    width: 100%;
+    height: 100%;
+}
+
+.commodityr_buy_ul li {
+    height: 100%;
+    width: 140px;
+    background-color: rosybrown;
+    margin: 0 30px;
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.commodityr_buy_ul li:hover {
+    opacity: .5;
+}
+
+.commodityr_buy_ul a {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.commodityr_buy_ul span {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: '宋体';
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: rosybrown;
+}
+
+.commodityr_buy_ul .commodityr_buy_1 {
+    width: 200px;
+}
+
+.commodityr_buy_1 img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.commodityr_buy_1 span {
+    margin-left: -10px;
+}

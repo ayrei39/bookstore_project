@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>当当网</title>
+    <script src="../js/config.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/commodityDetail.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="../js/commodityDetail.js" defer="defer"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/animate.js"></script>
+    <script src="../js/checkAccount.js"></script>
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="http://unpkg.com/layui@2.6.8/dist/css/layui.css">
+
+    <!-- 引入 layui.js -->
+    <script src="http://unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <script src="../js/Detail/addshopcart.js"></script>
+    <script src="../js/searchbook.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <a href="index.html" id="heada">
+        <div class="head w">
+            <img src="../img/head.jpg" alt="">
+        </div>
+    </a>
+    <!-- 主体 -->
+    <div class="body">
+        <!-- 头部介绍 送至 -->
+        <div class="intro">
+            <div class="intro1">
+                <!-- 左边地址 -->
+                <div class="addressf">
+                    <a class="addressfa">送至：江苏</a>
+                </div>
+                <!-- 右边切换页面 -->
+                <div class="page">
+                    <ul class="pageul">
+                        <li class="pageulli">
+                            欢迎光临
+                                <a class="login" href="login&register.html" id="admin">登录</a>
+                        </li>
+                        <li><img src="../img/gouwuche.png"><a href="shoppingCart.html"> 购物车</a></li><i>|</i>
+                        <li><a href="./order.html">我的订单</a></li><i>|</i>
+                        <li><a href="#">我的云书房</a></li><i>|</i>
+                        <li class="pagelidd"><a href="">我的当当&nbsp;<img class="pageliddimg"
+                                    src="../img/jiantouxia.png"></a>
+                            <div class="pagedd ">
+                                <ul class="pageddul">
+                                    <li><a href="">银铃铛抵现</a></li>
+                                    <li><a href="">我的收藏</a></li>
+                                    <li><a href="">我的余额</a></li>
+                                    <li><a href="">我的评论</a></li>
+                                    <li><a href="">礼券/礼品卡</a></li>
+                                </ul>
+                            </div>
+                        </li><i>|</i>
+                        <li><a href="">当当拼团</a></li><i>|</i>
+                        <li><a href="">小说投稿</a></li><i>|</i>
+                        <li class="pagelicg"><a href="">企业采购&nbsp;<img class="pagelicgimg"
+                                    src="../img/jiantouxia.png"></a>
+                            <div class="pagecg ">
+                                <ul class="pagecgul">
+                                    <li><a href="">大宗采购
+                                        </a></li>
+                                    <li><a href="">礼品卡采购</a></li>
+                                    <li><a href="">礼品卡使用</a></li>
+                                    <li><a href="">分销/荐购</a></li>
+                                    <li><a href="">礼品卡专区</a></li>
+                                </ul>
+                            </div>
+                        </li><i>|</i>
+                        <li><a href="">客户服务</a></li><i>|</i>
+                        <li><a href="">切换无障碍</a></li><i>|</i>
+                        <li><a href="">进入关怀模式</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏 当当网 -->
+        <div class="nav w">
+            <!-- 导航左边 -->
+            <div class="navleft">
+            </div>
+            <!-- 导航中间 -->
+            <div class="navmid">
+                <div>
+                    <div class="navmidserch">
+                        <div class="navmidserchinput">
+                            <input type="text" id="search"placeholder="童书">
+                        </div>
+                        <div class="navmidserchselect">
+                            <select name="" id="navmidserchselect2">
+                                <option value="0">全部分类</option>
+                                <option value="1">童书</option>
+                                <option value="2">小说</option>
+                                <option value="3">工具书</option>
+                                <option value="4">传记</option>
+                                <option value="5">历史</option>
+                                <option value="6">哲学</option>
+                            </select>
+                        </div>
+                        <div class="navmidserchsub">
+                            <a onclick="searchbook()">
+                                <img src="../img/sousuo.png" alt="搜索">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="navmidbot">
+                        <ul class="navmidbotul">
+                            <li id="navmidbotulli1"><span>热搜</span></li>
+                            <li><a href="">屁屁侦探</a></li>
+                            <li><a href="">教养全书</a></li>
+                            <li><a href="">东野圭吾</a></li>
+                            <li><a href="">2023考研资料</a></li>
+                            <li id="navmidbotulli2"><a href="">高级搜索</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航右边 -->
+            <div class="navright">
+                <div class="navrightgw">
+                    <a href="shoppingCart.html" class="navrightgwa">
+                        <img src="../img/gouwuchewheat.png" class="navrightgwache" alt="购物车">
+                        <span class="navrightgwaspan">购物车</span>
+                    </a>
+                </div>
+                <div class="navrightdd">
+                    <a href="./order.html" class="navrightdda">
+                        我的订单
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="commodity w">
+            <div class="commodityl">
+                <div class="commodityltop">
+                    <img id="bookPic" class="commodityltopimg" src="../pic/cover/十二生肖故事.jpg" alt="">
+                    <div class="commodityltopmask"></div>
+                    <div class="commodityltopBig">
+                        <img id="bookBigPic" class="commodityltopBigImg" src="../pic/cover/十二生肖故事.jpg" alt="">
+                    </div>
+                </div>
+                <div class="commoditylbottom">
+                    <ul class="commoditylbottomul">
+                        <li class="commoditylbottomulli" ><img id="bookpic_1" src="../pic/content/十二生肖的故事_1.jpg" alt=""></li>
+                        <li class="commoditylbottomulli" ><img id="bookpic_2" src="../pic/content/十二生肖的故事_2.jpg" alt=""></li>
+                        <li class="commoditylbottomulli" ><img id="bookpic_3" src="../pic/content/十二生肖的故事_3.jpg" alt=""></li>
+                        <li class="commoditylbottomulli" ><img id="bookpic_4" src="../pic/content/十二生肖的故事_4.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="commodityr">
+                <div class="commodityr_bookname">
+                    <span id="bookName">&lt;&lt;疯狂滑雪记&gt;&gt;</span>
+                </div>
+                <div class="commodityr_bookdescribe">
+                    <p id="bookDescription">这本书非常的好看，值得推荐！这本书非常的好看，值得推荐！这本书非常的好看，值得推荐！</p>
+                </div>
+                <div class="commodityr_bookprice">
+                    <div class="commodityr_bookpricel">
+                        <span class="commodityr_bookprice_1">当当价</span>
+                        <span id="bookPrice" class="commodityr_bookprice_2">¥33</span>
+                        <span id="originalBookPrice" class="commodityr_bookprice_3">定价¥63</span>
+                    </div>
+                    <div class="commodityr_bookpricer">
+                        <span class="commodityr_bookpricer_1">电子书价</span>
+                        <span id="eBookPrice" class="commodityr_bookpricer_2">¥23</span>
+                    </div>
+                </div>
+                <div class="commodityr_buy">
+                    <ul class="commodityr_buy_ul">
+                        <li class="commodityr_buy_1">
+                            <a onclick="updateItem(book_id)">
+                                <img src="../img/gouwuchewheat.png" alt="">
+                                <span>加入购物车</span>
+                            </a>
+                        </li>
+                        <li class="commodityr_buy_2"><a href="paymentSuccessful.html"><span>立即购买</span></a></li>
+                        <li class="commodityr_buy_3"><a href="paymentSuccessful.html"><span>购买电子书</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="bottom w">
+            <!-- 底部图片1 -->
+            <div class="btintro">
+                <ul class="btul">
+                    <li class="btli1">
+                        <img src="../img/bt正.png" alt="">
+                        <div class="btlidiv">
+                            <span>正 规 渠 道 正 品 保 障</span>
+                        </div>
+                    </li>
+                    <li class="btli2">
+                        <img src="../img/bt车.png" alt="">
+                        <div class="btlidiv">
+                            <span>6 2 5 城 市 次 日 到 达</span>
+                        </div>
+                    </li>
+                    <li class="btli3">
+                        <img src="../img/bt购物.png" alt="">
+                        <div class="btlidiv">
+                            <span>退 换 无 忧 购 物 无 忧</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 底部信息 -->
+            <div class="btinf">
+                <!-- 信息1 -->
+                <div class="btinfdv w">
+                    <dl class="btinfdvdl">
+                        <dt>购物指南
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>服务协议</dd>
+                        <dd>会员优惠</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>支付方式
+                        <dd>网上支付</dd>
+                        <dd>礼品卡支付</dd>
+                        <dd>银行转帐</dd>
+                        <dd>礼券支付</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>订单服务
+                        <dd>配送服务查询</dd>
+                        <dd>订单状态说明</dd>
+                        <dd>自助取消订单</dd>
+                        <dd>自助修改订单</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>配送方式
+                        <dd>当日递</dd>
+                        <dd>次日达</dd>
+                        <dd>订单自提</dd>
+                        <dd>验货与签收</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>退换货
+                        <dd>退换货服务查询</dd>
+                        <dd>自助申请退换货</dd>
+                        <dd>退换货进度查询</dd>
+                        <dd>退款方式和时间</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>商家服务
+                        <dd>商家中心</dd>
+                        <dd>运营服务</dd>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="btinf2">
+                <!-- 信息2 -->
+                <div class="btinf2dv w">
+                    <ul class="btinf2dvul">
+                        <li class="btinf2dvulli">公司简介</li><span>│</span>
+                        <li>诚聘英才</li><span>│</span>
+                        <li>网站联盟</li><span>│</span>
+                        <li>当当招商</li><span>│</span>
+                        <li>手机当当</li><span>│</span>
+                        <li>机构销售</li><span>│</span>
+                        <li>官方Blog</li><span>│</span>
+                        <li>知识产权</li><span>│</span>
+                        <li>热词搜索</li>
+                    </ul>
+                    <p>Copyright 2004 - 2021当当网.All Rights Reserved</p>
+                    <p>京ICP证O41189号<span>|</span>出版物经营许可证新出发京批字第直0673号<span>|</span>食品经营许可证:JY11101050363440</p>
+                    <p>京ICP备17043473号-1<span>|</span>京公网安备11010502037644号<span>|</span>经营许可证编号:合字B2-20160011<span>|</span>互联网药品信息服务资格证
+                    </p>
+                    <p>互联网违法和不良信息举报电话:4001066666-5，涉未成年举报电话:4001066666-9，邮箱: jubao_cbw@dangdang.com
+                    </p>
+                    <p>网络出版服务许可证（署）网出证(京)字第117号北京当当科文电子商务有限公司，通信地址:北京市朝阳区北三环东路8号静安中心
+                    </p>
+                </div>
+            </div>
+            <!-- 底部放图片 -->
+            <div class="btimg">
+                <ul>
+                    <li class="btimgli1"><img src="../img/首都安全.png"></li>
+                    <li><img src="../img/品牌官网.png"></li>
+                    <li><img src="../img/不良信息举报.png"></li>
+                    <li><img src="../img/可信网站.png"></li>
+                    <li><img src="../img/无障碍服务.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 头部 -->
+
+        <!-- 中间 -->
+
+        <!-- 底部 -->
+</body>
+
+</html>
