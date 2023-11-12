@@ -9,4 +9,4 @@
 - Maven
 
 环境：
-- Java18
+- SDK zulu18
